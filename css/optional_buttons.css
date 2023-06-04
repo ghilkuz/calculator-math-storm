@@ -1,0 +1,27 @@
+#additional-operations {
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-column: 5/6;
+    grid-row: 4/7;
+}
+
+#memory-operations {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: 1fr; */
+    grid-gap: 10px;
+    grid-column: 1/5;
+    grid-row: 2/3;
+}
+
+#to-convert-btn {
+    grid-column: 5/6;
+    grid-row: 2/3;
+}
+
+#to-numeral-systems-btn {
+    grid-column: 5/6;
+    grid-row: 3/4;
+}

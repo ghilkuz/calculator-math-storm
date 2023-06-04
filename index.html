@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <meta name="description" content="Race00. Calculator">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/change_ui.css">
+    <link rel="stylesheet" href="css/basic_buttons.css">
+    <link rel="stylesheet" href="css/optional_buttons.css">
+    <link rel="stylesheet" href="css/converter.css">
+    <link rel="stylesheet" href="css/numeral_systems.css">
+</head>
+
+<body>
+    <div id="header-container">
+        <h1>Math<span>Storm</span></h1>
+        <div id="ui-theme">
+            <label id="switch">
+                <input type="checkbox" checked>
+                <span id="slider"></span>
+            </label>
+        </div>
+    </div>
+    
+    <div id="main-container">
+        <div id="results-container">
+            <input type="text" id="history-field" readonly>
+            <input type="number" id="output-field" readonly>
+        </div>
+
+        <div id="controls-container">
+            <div id="digits-buttons">
+                <button id="seven" class="button dark">7</button>
+                <button id="eight" class="button dark">8</button>
+                <button id="nine" class="button dark">9</button>
+                <button id="four" class="button dark">4</button>
+                <button id="five" class="button dark">5</button>
+                <button id="six" class="button dark">6</button>
+                <button id="one" class="button dark">1</button>
+                <button id="two" class="button dark">2</button>
+                <button id="three" class="button dark">3</button>
+                <button id="zero" class="button dark">0</button>     
+                <button id="double-zero" class="button dark">00</button>      
+            </div>
+
+            <div id="arithmetic-operations">
+                <button id="add-btn" class="button light">&plus;</button>
+                <button id="subtract-btn" class="button light">&minus;</button>
+                <button id="multiply-btn" class="button light">&times;</button>
+                <button id="divide-btn" class="button light">&divide;</button>
+            </div>
+
+            <button id="equals-btn" class="button yellow">&equals;</button>
+            <button id="percent-btn" class="button light">%</button>
+            <button id="reset-btn" class="button red">C</button>
+            <button id="sign-btn" class="button light">&plus;/&minus;</button>
+            <button id="point-btn" class="button light">.</button>
+
+            <div id="additional-operations">
+                <button id="factorial-btn" class="button light">x!</button>
+                <button id="exponentiation-btn" class="button light">x<sup>n</sup></button>
+                <button id="square-root-btn" class="button light">&radic;</button>
+            </div>
+
+            <div id="memory-operations">
+                <button id="memory-clear-btn" class="button red">MC</button>
+                <button id="memory-add-btn" class="button light">M&plus;</button>
+                <button id="memory-substract-btn" class="button light">M&minus;</button>
+                <button id="memory-recall-btn" class="button light">MR</button>
+            </div>
+
+            <button id="to-convert-btn" class="button blue">&olarr;</button>
+            <button id="to-numeral-systems-btn" class="button blue">&hArr;</button> 
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+    <script src="js/change_ui.js"></script>
+    <script src="js/basic_operations.js"></script>
+    <script src="js/memory_operations.js"></script>
+    <script src="js/optional_operations.js"></script>
+    <script src="js/converter.js"></script>
+    <script src="js/numeral_systems.js"></script>
+</body>
+
+</html>

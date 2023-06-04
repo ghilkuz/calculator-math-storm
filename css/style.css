@@ -1,0 +1,123 @@
+:root {
+    /* Some styles can be combined actually */
+    --body-background-color: white;
+    --h1-color: #343434;
+    --main-container-background-color: #f0f0f0;
+    --results-container-background-color: #f0f0f0;
+    --history-field-background-color: white;
+    --history-field-color: #343434;
+    --output-field-background-color: white;
+    --output-field-color: #343434;
+    --button-color: #343434;
+    --dark-background-color: #343434;
+    --dark-color: #c0c0c0;
+    --light-background-color: #c0c0c0;
+    --equals-color: #343434;
+    --blue-color: #343434;
+    --conversion-container-background-color: #f0f0f0;
+    --numeral-systems-container-background-color: #f0f0f0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--body-background-color);
+    margin: auto;
+}
+
+#header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    display: inline-block;
+    margin-right: 10px;
+    color: var(--h1-color);
+    text-align: center;
+    padding: 20px;
+}
+
+span {
+    color: #6aaabc;
+}
+
+#main-container {
+    width: 300px;
+    margin: 0 auto;
+    background-color: var(--main-container-background-color);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#results-container {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--results-container-background-color);
+    border-radius: 5px;
+    text-align: right;
+}
+
+#history-field {
+    margin-bottom: 10px;
+    padding: 5px;
+    height: 40px;
+    font-size: 16px;
+    background-color: var(--history-field-background-color);
+    border: none;
+    text-align: right;
+    color: var(--history-field-color);
+}
+
+#output-field {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 270px;
+    height: 40px;
+    font-size: 36px;
+    background-color: var(--output-field-background-color);
+    border: none;
+    text-align: right;
+    color: var(--output-field-color);
+}
+
+#controls-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    position: relative;
+}
+
+.button {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--button-color);
+}
+
+.dark {
+    background-color: var(--dark-background-color);
+    color: var(--dark-color);
+}
+
+.light { background-color: var(--light-background-color); }
+
+.blue {
+    background-color: #6aaabc;
+    color: var(--blue-color);
+}
+
+.yellow { background-color: #f2cd0c; }
+
+.red {
+    background-color: #a0001b;
+    color: white;
+}
+
+.button:hover {
+    opacity: 0.8;
+}

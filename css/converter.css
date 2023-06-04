@@ -1,0 +1,30 @@
+#conversion-container {
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    /* transform: translateX(-10px); */
+    padding: 10px;
+    background-color: var(--conversion-container-background-color);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#length-btn, #weights-btn, #area-btn {
+    height: 30px;
+}
+
+@media (min-width: 1080px) {
+    #conversion-container {
+        top: 35%;
+        right: 26%;
+    }
+}
+
+@media (max-width: 1079px) {
+    #conversion-container {
+        border-radius: 5px;
+        top: 0;
+        right: 0;
+    }
+}

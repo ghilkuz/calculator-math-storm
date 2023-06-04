@@ -1,0 +1,49 @@
+#ui-theme {
+    display: flex;
+    align-items: center;
+}
+
+#switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+#switch input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+#slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #555a72;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+#slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    right: 2px;
+    top: 2px;
+    background-color: #6aaabc;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input[type="checkbox"]:checked + #slider {
+    background-color: #d8d8d8;
+}
+
+input[type="checkbox"]:checked + #slider:before {
+    transform: translateX(-20px);
+}
